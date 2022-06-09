@@ -80,7 +80,7 @@ Module({
 Module({
   pattern: 'yt?(.*)',
   fromMe: sourav,
-  desc: "Select and download songs from yt (list)"
+  desc: "Select and download songs from yt"
 }, (async (message, match) => {
   if (!match[1]) return message.sendReply("*Need words*")
   var myid = message.client.user.id.split("@")[0].split(":")[0]
